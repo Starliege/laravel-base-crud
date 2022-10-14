@@ -21,7 +21,6 @@
     <div class="form-group">
       <label for="description">Descrizione</label>
       <textarea class="form-control" id="description" name="description"
-        placeholder="Inserisci la descrizione dell'opera">value="{{ $comic->description }}"</textarea>
         placeholder="Inserisci la descrizione dell'opera">{{ $comic->description }}"</textarea>
     </div>
     <div class="form-group">
@@ -46,8 +45,6 @@
         <option value="graphic novel" {{ $comic->type == 'graphic novel' ? 'selected' : '' }}>Graphic novel</option>
       </select>
     </div>
-
-    <button type="submit" class="btn btn-primary">Crea</button>
     <button type="submit" class="btn btn-primary">Conferma modifiche</button>
   </form>
 @endsection
